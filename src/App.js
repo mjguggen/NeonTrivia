@@ -103,7 +103,7 @@ class App extends React.Component {
   //start game
   startGame = async () => {
     const questionCount = this.state.gameQuestionCount + 1
-    const APIcall = await fetch (`http://jservice.io/api/random?count=${questionCount}`)
+    const APIcall = await fetch (`https://cors-anywhere.herokuapp.com/http://jservice.io/api/random?count=${questionCount}`)
     const data = await APIcall.json()
 
     await this.setState({
