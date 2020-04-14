@@ -6,6 +6,7 @@ import GameSetup from './Components/GameSetup';
 import Scoreboard from './Components/Scoreboard'
 import QuestionCard from './Components/QuestionCard'
 import FinalScore from './Components/FinalScore'
+import PlayAgain from './Components/PlayAgain'
 import ScoreAdder from './Components/ScoreAdder'
 import Reset from './Components/Reset'
 import Footer from './Components/Footer'
@@ -96,7 +97,7 @@ class App extends React.Component {
     this.state.gameQuestionCount > 5 ? this.setState({
       gameQuestionCount: this.state.gameQuestionCount - 5,
       gameQuestionCountError: undefined,
-    }) : this.setState({gameQuestionCountError: "Min question amount 5 questions"})
+    }) : this.setState({gameQuestionCountError: "Minimum question amount 5 questions"})
   }
 
   //start game
@@ -363,11 +364,6 @@ class App extends React.Component {
       addPlayerToArr("Player 4", this.state.p4Score)
     }
 
-//    const finalScores = this.state.playerData.map((i, index) => [i.name, i.score])
-//    const sorted = finalScores.sort(function(a, b){return b-a})
-
-
-
     await this.setState({
       gameOver: true,
       finalScore: this.state.playerData.map((i, index) => (
@@ -380,11 +376,36 @@ class App extends React.Component {
     })
   }
 
+  playAgain = async () => {
+
+    this.startGame()
+
+    this.setState({
+      //scoreboard;
+      p1Score: 0,
+      p2Score: 0,
+      p3Score: 0,
+      p4Score: 0,
+      p1TempScore: 0,
+      p2TempScore: 0,
+      p3TempScore: 0,
+      p4TempScore: 0,
+      questionsLeft: undefined,
+      playerData: [],
+      finalScore: [],
+
+      //GameState
+      gameStarted: false,
+      currentQuestion: 1,
+      arrQuestion: 0,
+      gameSetup: true,
+    })
+
+  }
 
   render() {
     return (
       <div className="App">
-        <div className="background"/>
 
         <div className="title-container">
           <div className="bar-container">
@@ -476,10 +497,15 @@ class App extends React.Component {
           finalScore={this.state.finalScore}
         />
 
-
         <Reset
           resetGame={this.resetGame}
           gameStarted={this.state.gameStarted}
+          gameOver={this.state.gameOver}
+        />
+
+        <PlayAgain
+          gameOver={this.state.gameOver}
+          playAgain={this.playAgain}
         />
 
         <Footer/>

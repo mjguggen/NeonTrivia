@@ -16,6 +16,8 @@ const QuestionCard = props => {
         );
     }
 
+    
+
 
     return (
         <div>
@@ -39,16 +41,16 @@ const QuestionCard = props => {
 
                                         <div className="qa-box question" style={props.questionUI} > 
                                             <div className="qa"> Question:</div>
-                                            <div className="qa-text" > {toTitleCase(props.data[props.arrQuestion].question)} </div>
+                                            <div className="qa-text" > {toTitleCase(props.data[props.arrQuestion].question.replace(/<[^>]+\>/g, ''))} </div>
                                         </div>
 
                                         <div className="qa-box answer" style={props.answerUI}> 
                                             <div className="qa"> Answer: </div>
-                                            <div className="qa-text" > {toTitleCase(props.data[props.arrQuestion].answer.replace(/<[^>]+>/g, ''))} </div>
+                                            <div className="qa-text" > {toTitleCase(props.data[props.arrQuestion].answer.replace(/<[^>]+\>/g, ''))} </div>
                                         </div>
 
                                         <div className="question-card-bottom">
-                                            <div id="question-category"> Category: {toTitleCase(props.data[props.arrQuestion].category.title)} </div>
+                                            <div id="question-category"> Category: {toTitleCase(props.data[props.arrQuestion].category.title.replace(/<[^>]+\>/g, ''))} </div>
 
                                             <div className="card-flip" >
                                                 <img className="flip-icon" style={props.questionUI} src="https://cdn.iconscout.com/icon/free/png-256/flip-1767771-1502351.png"/>

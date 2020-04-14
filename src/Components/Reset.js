@@ -7,8 +7,8 @@ const Reset = props => {
 
     return (
         <div >
-            {props.gameStarted &&
-            <button className="reset" onClick={props.resetGame}>Reset Game</button>
+            {props.gameStarted == true & props.gameOver === false ? 
+            <button className="reset" onClick={props.resetGame}>Reset Game</button> : <div/>
             }
         </div>
     )
