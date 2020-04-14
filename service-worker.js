@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/NeonTrivia/precache-manifest.0f8f2deb354c1fefbbda9209e688a87d.js"
+  "/NeonTrivia/precache-manifest.c211e8cc2ed4072a720ee4dcb342afa6.js"
 );
 
 self.addEventListener('message', (event) => {
