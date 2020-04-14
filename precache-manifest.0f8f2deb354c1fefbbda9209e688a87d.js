@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e38c87fe972d70f128447a2d3213658e",
+    "revision": "db487fb89efbd39fa0ec9e333d817c62",
     "url": "/NeonTrivia/index.html"
   },
   {
-    "revision": "14a04de47eaaf5d666ed",
+    "revision": "a5b16c03dbf9b47bc8f0",
     "url": "/NeonTrivia/static/css/main.44a199dd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NeonTrivia/static/js/2.46c90771.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "14a04de47eaaf5d666ed",
-    "url": "/NeonTrivia/static/js/main.3364fb16.chunk.js"
+    "revision": "a5b16c03dbf9b47bc8f0",
+    "url": "/NeonTrivia/static/js/main.6ab87579.chunk.js"
   },
   {
     "revision": "96a47e28e3bcc5fcd65c",
