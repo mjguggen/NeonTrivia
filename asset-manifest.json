@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/NeonTrivia/static/css/main.44a199dd.chunk.css",
-    "main.js": "/NeonTrivia/static/js/main.26a51b0b.chunk.js",
-    "main.js.map": "/NeonTrivia/static/js/main.26a51b0b.chunk.js.map",
+    "main.js": "/NeonTrivia/static/js/main.e8c7baf8.chunk.js",
+    "main.js.map": "/NeonTrivia/static/js/main.e8c7baf8.chunk.js.map",
     "runtime-main.js": "/NeonTrivia/static/js/runtime-main.53c3f5e3.js",
     "runtime-main.js.map": "/NeonTrivia/static/js/runtime-main.53c3f5e3.js.map",
     "static/js/2.46c90771.chunk.js": "/NeonTrivia/static/js/2.46c90771.chunk.js",
     "static/js/2.46c90771.chunk.js.map": "/NeonTrivia/static/js/2.46c90771.chunk.js.map",
     "index.html": "/NeonTrivia/index.html",
-    "precache-manifest.6dc1fe1f0ff2d123aa086bb1c8397509.js": "/NeonTrivia/precache-manifest.6dc1fe1f0ff2d123aa086bb1c8397509.js",
+    "precache-manifest.550dbd3a665eb3607eb749b3e9010cac.js": "/NeonTrivia/precache-manifest.550dbd3a665eb3607eb749b3e9010cac.js",
     "service-worker.js": "/NeonTrivia/service-worker.js",
     "static/css/main.44a199dd.chunk.css.map": "/NeonTrivia/static/css/main.44a199dd.chunk.css.map",
     "static/js/2.46c90771.chunk.js.LICENSE.txt": "/NeonTrivia/static/js/2.46c90771.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.53c3f5e3.js",
     "static/js/2.46c90771.chunk.js",
     "static/css/main.44a199dd.chunk.css",
-    "static/js/main.26a51b0b.chunk.js"
+    "static/js/main.e8c7baf8.chunk.js"
   ]
 }
